@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>YUMMY</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-title">YUMMY APP</h1>
+    </header>
+    <section id='show'>
+        <h2 class="menu">MENUE</h1>
+            <p class="select">Select a Category:</p>
+            <div class="btn">
+                <button type='button' id='food' class='categories--btn'>Food</button>
+                <button type='button' id='drinks' class='categories--btn'>DRINKS</button>
+
+            </div>
+            </div>
+            <div class='results'></div>
+    </section>
+    <section>
+        <div class="container"></div>
+    </section>
+
+    <section id='add'>
+        <h2 class=" menu--nospace">Add to Our Menue</h2>
+        <p class="sugg"> Add your favorite sandwitch or drink to our menue.</p>
+        <form class='addForm'>
+            <label for='mealName'>Name</label>
+            <input value="" id='mealName' type=' text' class='addForm--input' required>
+            <label for='mealPrice'>Price</label>
+            <input value="" id='mealPrice' type='text' class='addForm--input' required>
+            <label for="mealimg">Meal Img-URL</label>
+            <input value="" id="mealimg" type="text" class="addForm--input" required>
+            <select id='selection' class="selection">
+                <option value='Food'>Food</option>
+                <option value='Drink'>Drinks</option>
+            </select>
+            <button class="addForm--btn add " type="click">Add</button>
+        </form>
+    </section>
+
+
+    <script src="./public/js/fetch.js"></script>
+    <script src="./public/js/dom.js"></script>
+</body>
+
+</html>
